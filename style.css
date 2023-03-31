@@ -1,0 +1,59 @@
+
+.navbar-arkaplan{
+    background-color: #144272;
+    color: white;
+   
+}
+
+.navbar-arkaplan .navbar-nav .nav-link, .navbar-brand{
+    color: white;
+  }
+
+.arkaplan1{
+    background-color: #D6E4E5;
+    border-radius: 20px;
+}
+
+.arkaplan2{
+    background-color: #FFE1E1;
+    border-radius: 20px;
+}
+.arkaplan3{
+    background-color: #EEF1FF;
+    border-radius: 20px;
+}
+
+.footer-kapsayici{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.ikonlar{
+    display: inline-block; 
+    background-color: white; 
+    width: 55px; 
+    height: 55px; 
+    border-radius: 50%;
+    
+}
+
+.iconlar-classi{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .iconlar-classi{
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        
+    }
+
+    .footer-kapsayici{
+        gap: 70px;
+    }
+  }
