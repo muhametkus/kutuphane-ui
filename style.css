@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .navbar-arkaplan{
     background-color: #144272;
@@ -22,11 +27,16 @@
     background-color: #EEF1FF;
     border-radius: 20px;
 }
+.arkaplan4{
+    background-color: #8FE3CF;
+    border-radius: 20px;
+}
 
 .footer-kapsayici{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+
 
 .ikonlar{
     display: inline-block; 
@@ -56,4 +66,17 @@
     .footer-kapsayici{
         gap: 70px;
     }
+  }
+
+
+.giris-kayit-buton a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    transition: 0.3s;
+  }
+
+  .giris-kayit-buton a:hover{
+
+    color: #d80707;
   }
