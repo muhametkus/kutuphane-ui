@@ -1,352 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitaplık</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-arkaplan fixed-top sticky-bottom">
-        <div class="container-fluid mx-md-5 mx-lg-5 mx-sm-5">
-          <a class="navbar-brand" href="#">Kitaplık</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Anasayfa</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Kitaplar
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Kategoriler</a></li>
-                  <li><a class="dropdown-item" href="#">En Çok Okunanlar</a></li>   
-                  <li><a class="dropdown-item" href="#">Yeni Çıkanlar</a></li>
-                </ul>
-              </li>
-            
-            </ul>
-
-            
-            
-                <form class="d-flex m-auto" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Search">
-                    <button class="btn bg-light" type="submit"><i class="fas fa-search"></i></button>
-                  </form>
-
-              
-
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link justify-content-end text-white" href="#">Hesabım</a></li>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-arkaplan fixed-top sticky-bottom"
+    >
+      <div class="container-fluid mx-md-5 mx-lg-5 mx-sm-5">
+        <a class="navbar-brand" href="#">Kitaplık</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kitaplar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kategoriler</a></li>
+                <li><a class="dropdown-item" href="#">En Çok Okunanlar</a></li>
+                <li><a class="dropdown-item" href="#">Yeni Çıkanlar</a></li>
               </ul>
-                
-              
-            
+            </li>
+          </ul>
+
+          <form class="d-flex m-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Ara..."
+              aria-label="Search"
+            />
+            <button class="btn bg-light" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link justify-content-end text-white" href="#"
+                >Hesabım</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="kapsayici">
+      <div
+        class="en-cok-okunanlar col-11 m-auto mt-4 d-flex row arkaplan1 shadow-sm"
+      >
+        <h2 class="text-center mt-3 mb-3">EN ÇOK OKUNANLAR</h2>
+
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
 
-    
-      <div class="kapsayici">
-        <div class="en-cok-okunanlar col-11 m-auto mt-4 d-flex row arkaplan1 shadow-sm">
-            <h2 class="text-center mt-3 mb-3">EN ÇOK OKUNANLAR</h2>
-            
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-               
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                
-                
-                
-                
-                  
-                  
-            
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="yeni-cikanlar col-11 m-auto mt-4 d-flex row arkaplan2 shadow-sm">
-            <h2 class="text-center mt-3 mb-3">Yeni Çıkanlar</h2>
-            
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-               
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                
-                
-                
-                
-                  
-                  
-            
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="diger-kitaplar col-11 m-auto mt-4 d-flex row arkaplan3 shadow-sm">
-            <h2 class="text-center mt-3 mb-3">Diğer Kitaplar</h2>
-            
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-               
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                <div class="kitap-kapsayici m-auto  col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5">
-                    <div class="card m-auto" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
-                            <div class="buton-kapsayici text-center mt-3"><a href="#" class="btn btn-primary">KİTABI İNCELE</a></div>
-                        </div>
-                      </div>
-                </div>
-                
-                
-                
-                
-                  
-                  
-            
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div
+        class="yeni-cikanlar col-11 m-auto mt-4 d-flex row arkaplan2 shadow-sm"
+      >
+        <h2 class="text-center mt-3 mb-3">Yeni Çıkanlar</h2>
 
-      <footer class="footer navbar-arkaplan">
-        <div class="footer-kapsayici m-auto col-9 text-center mt-5 gap-5">
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="diger-kitaplar col-11 m-auto mt-4 d-flex row arkaplan3 shadow-sm"
+      >
+        <h2 class="text-center mt-3 mb-3">Diğer Kitaplar</h2>
+
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="kitap-kapsayici m-auto col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5"
+        >
+          <div class="card m-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://i.idefix.com/cache/500x400-0/originals/0000000058245-1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Kürk Mantolu Madonna</h5>
+              <div class="buton-kapsayici text-center mt-3">
+                <a href="#" class="btn btn-primary">KİTABI İNCELE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer navbar-arkaplan">
+      <div class="footer-kapsayici m-auto col-9 text-center mt-5 gap-5">
         <div class="footer-aciklama mt-4 mb-3">
-          <h2>Kitaplık </h2>
-          <p>Bu Web Site'nin tasarımı ve programlaması <a class="text-decoration-none text-light" href="https://www.linkedin.com/in/muhametkus" target="_blank">Muhammet Kuş</a> tarafından yapılmıştır.</p>
+          <h2>Kitaplık</h2>
+          <p>
+            Bu Web Site'nin tasarımı ve programlaması
+            <a
+              class="text-decoration-none text-light"
+              href="https://www.linkedin.com/in/muhametkus"
+              target="_blank"
+              >Muhammet Kuş</a
+            >
+            tarafından yapılmıştır.
+          </p>
         </div>
 
         <div class="iconlar-classi">
           <div class="ikonlar d-flex align-items-center justify-content-center">
-            
-            <a href="https://www.linkedin.com/in/muhametkus" target="_blank"><i class="fa-brands fa-linkedin fs-1" aria-hidden="true"></i></a></div>
+            <a href="https://www.linkedin.com/in/muhametkus" target="_blank"
+              ><i class="fa-brands fa-linkedin fs-1" aria-hidden="true"></i
+            ></a>
+          </div>
 
-
-            <div class="ikonlar d-flex align-items-center justify-content-center">
-          <a href="https://github.com/muhametkus" target="_blank"><i class="fa-brands fa-github fs-1" aria-hidden="true"></i></a>
+          <div class="ikonlar d-flex align-items-center justify-content-center">
+            <a href="https://github.com/muhametkus" target="_blank"
+              ><i class="fa-brands fa-github fs-1" aria-hidden="true"></i
+            ></a>
+          </div>
         </div>
-      
       </div>
+    </footer>
 
-        </div>
-        
-        
-
-      </footer>
-
-
-    
-
-
-
-
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>   
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
