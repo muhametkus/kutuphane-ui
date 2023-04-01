@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 
 .navbar-arkaplan {
   background-color: #144272;
@@ -83,7 +87,7 @@
   .kitap-turu h6{
     margin-bottom: 35px;
   }
-
+  
 
 }
 
@@ -95,7 +99,7 @@
 }
 
 .giris-kayit-buton a:hover {
-  color: #d80707;
+  color: crimson;
 }
 
 .giris-kayit-buton .kayit-ol {
@@ -103,7 +107,7 @@
 }
 
 .favekle i{
-  color: #1100ff;
+  color: #144272;
   transition: 0.5s;
   font-size: 45px;
 }
@@ -118,3 +122,31 @@
   font-size: 20px;
   font-weight: normal;
 }
+
+.ortala{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+.hizala1{
+  display: grid;
+  grid-template-columns: 4fr 12fr 1fr;
+}
+
+.kitaplar-kapsayici{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.hover-icin-kullan{
+  color: #144272;
+  transition: 0.3s;
+}
+
+.hover-icin-kullan:hover{
+  color: crimson;
+
+}
+
+
