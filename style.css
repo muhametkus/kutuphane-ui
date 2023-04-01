@@ -63,13 +63,35 @@
   .footer-kapsayici {
     gap: 70px;
   }
+
+  .kapsayici{
+    display: flex;
+    flex-direction: column;
+   margin: auto;
+  }
+  .fotokapsa, .foto{
+    margin: auto;
+  }
+  .favekle{
+    margin-bottom: 30px;
+  }
+
+  .kitap-turu{
+    display: flex;
+    flex-direction: column;
+  }
+  .kitap-turu h6{
+    margin-bottom: 35px;
+  }
+
+
 }
 
 .giris-kayit-buton a {
   text-decoration: none;
   color: black;
   font-size: 17px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .giris-kayit-buton a:hover {
@@ -78,4 +100,21 @@
 
 .giris-kayit-buton .kayit-ol {
   margin-left: 25px;
+}
+
+.favekle i{
+  color: #1100ff;
+  transition: 0.5s;
+  font-size: 45px;
+}
+
+.favekle i:hover{
+  color: crimson;
+}
+.kitap-turu p{
+  margin-left: 5px;
+}
+.kitap-turu h6{
+  font-size: 20px;
+  font-weight: normal;
 }
